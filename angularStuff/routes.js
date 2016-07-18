@@ -20,6 +20,7 @@ angular.module('routerApp')
           .state('projects', {
             // url:'/projects',
             //commented out above to show functionality of code below
+            //type is just an arbitrary word
             url:'/projects/:type',
             templateUrl:'views/projects.html',
             controller: 'mainCtrl',
