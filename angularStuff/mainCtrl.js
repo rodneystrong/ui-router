@@ -1,4 +1,6 @@
-angular.module('routerApp').controller('mainCtrl',function($scope, $stateParams, mainService){
+angular
+  .module('routerApp')
+  .controller('mainCtrl',function($scope, $stateParams, mainService){
 
     $scope.test = "hey projects page";
 
