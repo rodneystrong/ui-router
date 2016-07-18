@@ -1,5 +1,8 @@
 angular
   .module('routerApp')
-  .service('main', function($scope){
-    
+  .service('mainService', function(){
+    this.getRecentProject = function(id){
+      console.log('service');
+      console.log(id);
+    }
   });

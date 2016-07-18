@@ -1,6 +1,4 @@
-angular.module('routerApp').controller('mainCtrl',function($scope, $stateParams){
-
-    $scope.test = 'Hello From Home Page';
+angular.module('routerApp').controller('mainCtrl',function($scope, $stateParams, mainService){
 
     $scope.test = "hey projects page";
 
@@ -8,7 +6,15 @@ angular.module('routerApp').controller('mainCtrl',function($scope, $stateParams)
 
     //Create a service that returns an object with a 'name' property on it
     //pass along the $stateParams
-    
+    var id = $stateParams;
+
+    //if there are stateParams, then go to the
+    //service and get all the ids.
+    if($stateParams) {
+        mainService.getRecentProject(id);
+    }
+
+
     console.log($stateParams);
 
 });

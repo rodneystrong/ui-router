@@ -21,7 +21,7 @@ angular.module('routerApp')
             // url:'/projects',
             //commented out above to show functionality of code below
             //type is just an arbitrary word
-            url:'/projects/:type',
+            url:'/projects/:id',
             templateUrl:'views/projects.html',
             controller: 'mainCtrl',
             resolve: [
