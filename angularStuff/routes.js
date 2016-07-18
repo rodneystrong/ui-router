@@ -13,14 +13,22 @@ angular.module('routerApp')
             url: '/',
             templateUrl: 'views/home.html'
           })
-          .state('contact', {
-            url:'/contact',
-            templateUrl: 'views/contact.html'
-          })
           .state('studio', {
             url:'/studio',
             templateUrl:'views/studio.html'
           })
+          .state('projects', {
+            url:'/projects',
+            templateUrl:'views/projects.html'
+          })
+          .state('contact', {
+            url:'/contact',
+            templateUrl:'views/contact.html'
+          })
+          .state('pricing', {
+            url:'/pricing',
+            templateUrl:'views/pricing.html'
+          });
 
 });
 
