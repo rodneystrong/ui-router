@@ -18,9 +18,14 @@ angular.module('routerApp')
             templateUrl:'views/studio.html'
           })
           .state('projects', {
-            url:'/projects',
+            // url:'/projects',
+            //commented out above to show functionality of code below
+            url:'/projects/:type',
             templateUrl:'views/projects.html',
-            controller: 'mainCtrl'
+            controller: 'mainCtrl',
+            resolve: [
+
+            ]
           })
           .state('contact', {
             url:'/contact',
