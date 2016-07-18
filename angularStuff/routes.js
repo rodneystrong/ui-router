@@ -16,6 +16,13 @@ angular.module('routerApp')
           .state('contact', {
             url:'/contact',
             templateUrl: 'views/contact.html'
-          });
+          })
+          .state('studio', {
+            url:'/studio',
+            templateUrl:'views/studio.html'
+          })
 
 });
+
+
+//$locationProvider is available to us through angular
