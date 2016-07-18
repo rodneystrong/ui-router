@@ -19,7 +19,8 @@ angular.module('routerApp')
           })
           .state('projects', {
             url:'/projects',
-            templateUrl:'views/projects.html'
+            templateUrl:'views/projects.html',
+            controller: 'mainCtrl'
           })
           .state('contact', {
             url:'/contact',
